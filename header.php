@@ -36,15 +36,10 @@ $classes = ( is_front_page() ) ? 'homepage':'subpage';
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="wrapper">
-			<?php if( get_custom_logo() ) { ?>
+			
 	            <div class="logo">
-	            	<?php the_custom_logo(); ?>
+	            	<img src="<?php bloginfo('template_url'); ?>/images/logo-chas.png" alt="Chas Fagan">
 	            </div>
-	        <?php } else { ?>
-	            <h1 class="logo">
-		            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-	            </h1>
-	        <?php } ?>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?><span></span></button>
