@@ -83,13 +83,18 @@ get_header(); ?>
 						$image = wp_get_attachment_image_src($post_thumbnail_id,'large');
 						$image_alt = get_post_meta( $post_thumbnail_id, '_wp_attachment_image_alt', true);
 						$featuredImage = $image[0];
-					} ?>
+					} 
+
+						// echo '<pre>';
+						// print_r($featuredImage);
+						// echo '</pre>';
+					?>
 
 					<?php if($featuredImage) { ?>
 						<div class="box box-with-link item" title="<?php echo $term_name; ?>" data-url="<?php echo $pagelink; ?>">
 							<div class="inside clear">
 								<figure class="effect-zoe">
-									<img class="featimg" src="<?php echo $featuredImage?>" alt="<?php echo $image_alt?>" />
+									<img class="featimg" src="<?php echo $featuredImage; ?>" alt="<?php echo $image_alt; ?>" />
 									<figcaption>
 										<p class="title1"><?php echo $term_name; ?></p>
 									</figcaption>

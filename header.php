@@ -38,7 +38,10 @@ $classes = ( is_front_page() ) ? 'homepage':'subpage';
 		<div class="wrapper">
 			
 	            <div class="logo">
+	            <a href="<?php bloginfo('url'); ?>">
 	            	<img src="<?php bloginfo('template_url'); ?>/images/logo-chas.png" alt="Chas Fagan">
+	            </a>
+	            	
 	            </div>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">

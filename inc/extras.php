@@ -250,7 +250,7 @@ function get_galleries($taxonomy,$term_id,$page=1,$perpage=9) {
                     <div data-page="<?php echo $page; ?>" class="items_group_<?php echo $page; ?> grid__item box item<?php echo ($is_new) ? ' newEntry':'';?>">
                         <div class="inside clear">
                             <a id="<?php echo $slug_name?>"  class="effect-zoe popup-image popUp2" rel="gal" title="<?php echo $image_alt; ?>" href="<?php echo $image_src[0]?>">
-                                <?php the_post_thumbnail('medium'); ?>
+                                <?php the_post_thumbnail('large'); ?>
                             </a>
                         </div>
                     </div>
@@ -261,7 +261,7 @@ function get_galleries($taxonomy,$term_id,$page=1,$perpage=9) {
                     <a data-page="<?php echo $page; ?>" class="items_group_<?php echo $page; ?> grid__item box box-with-link item<?php echo ($is_new) ? ' newEntry':'';?>" href="<?php echo $pagelink; ?>">
                         <span class="inside clear">
                             <figure class="effect-zoe">
-                                <?php the_post_thumbnail('medium'); ?>
+                                <?php the_post_thumbnail('large'); ?>
                                 <figcaption>
                                     <p class="title1"><?php echo get_the_title(); ?></p>
                                     <p class="title2"><?php echo $sub_title; ?></p>
