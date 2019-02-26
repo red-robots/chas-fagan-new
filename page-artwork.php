@@ -57,6 +57,10 @@ get_header(); ?>
 					$categoryImage = get_field('artwork_featured_image',$t);
 					$featuredImage = '';
 					$image_alt = '';
+
+					// echo '<pre>';
+					// print_r($t);
+					// echo '</pre>';
 					// $imageSRC = '';
 					// $image_alt = '';
 					// if($project_page_id) {
@@ -91,15 +95,17 @@ get_header(); ?>
 					?>
 
 					<?php if($featuredImage) { ?>
-						<div class="box box-with-link item" title="<?php echo $term_name; ?>" data-url="<?php echo $pagelink; ?>">
-							<div class="inside clear">
-								<figure class="effect-zoe">
-									<img class="featimg" src="<?php echo $featuredImage; ?>" alt="<?php echo $image_alt; ?>" />
-									<figcaption>
-										<p class="title1"><?php echo $term_name; ?></p>
-									</figcaption>
-								</figure>
-							</div>
+						<div class="box box-with-link item" title="<?php echo $term_name; ?>" data-url="<?php //echo $pagelink; ?>">
+							<a href="<?php echo $pagelink; ?>">
+								<div class="inside clear">
+									<figure class="effect-zoe">
+										<img class="featimg" src="<?php echo $featuredImage; ?>" alt="<?php echo $image_alt; ?>" />
+										<figcaption>
+											<p class="title1"><?php echo $term_name; ?></p>
+										</figcaption>
+									</figure>
+								</div>
+							</a>
 						</div>
 					<?php } ?>
 
